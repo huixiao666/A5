@@ -6,43 +6,43 @@
     <title>皮卡应用下载</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('https://files.catbox.moe/17tx09.jpg'); /* 替换为您的背景图片路径 */
-            background-size: cover; /* 背景图覆盖整个屏幕 */
-            background-position: center; /* 背景图居中显示 */
-            background-repeat: no-repeat; /* 背景图不重复 */
-            background-attachment: fixed; /* 背景图固定，不随滚动条滚动 */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .download-container {
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            width: 180px;
-        }
-        .logo {
-            font-size: 48px;
-            color: #00bfa5;
-            margin-bottom: 20px;
-        }
-        .title {
-            font-size: 24px;
-            color: #333333;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            font-size: 16px;
-            color: #666666;
-            margin-bottom: 20px;
-        }
-        .download-button {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://files.catbox.moe/17tx09.jpg'); /* 替换为您的背景图片路径 */
+    background-size: cover; /* 背景图覆盖整个屏幕 */
+    background-position: center; /* 背景图居中显示 */
+    background-repeat: no-repeat; /* 背景图不重复 */
+    background-attachment: fixed; /* 背景图固定，不随滚动条滚动 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.download-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+}
+.logo {
+    font-size: 48px;
+    color: #00bfa5;
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+.download-button {
     background-color: #00bfa5;
     color: white;
     border: none;
@@ -52,36 +52,27 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-/* 下面的样式规则被注释掉，以去除鼠标悬停时的背景色变化 */
-/*
-.download-button:hover {
-    background-color: #009688;
+.download-button a {
+    text-decoration: none; /* 去除下划线 */
+    color: white; /* 保持链接文字颜色为白色 */
 }
-*/
+.download-button:hover a {
+    text-decoration: none; /* 鼠标悬停时也去除下划线 */
+}
+.features {
+    margin-top: 20px;
+}
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.feature img {
+    width: 250px;
+    height: 120px;
+    margin-right: 10px;
+}
 
-        .features {
-            margin-top: 20px;
-        }
-        .feature {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .feature img {
-            width: 250px;
-            height: 120px;
-            margin-right: 10px;
-        }
-        .download-btn {
-        display: inline-block;
-        background: #1a73e8;
-        color: white;
-        padding: 8px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
-        }
     </style>
 </head>
 <body>
@@ -89,7 +80,7 @@
         <div class="logo">PK</div>
         <div class="title"></div>
         <div class="subtitle"></div>
-        <button class="download-button" >
+        <button class="download-button">
             <a href="https://share.feijipan.com/s/3rEEr5mr">立即下载</a>
         </button>
   
