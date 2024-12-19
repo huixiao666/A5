@@ -1,159 +1,85 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网站</title>
+    <title>皮卡应用下载</title>
     <style>
-        /* 全局样式设置 */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa; /* 页面背景色 */
+            background-image: url('https://files.catbox.moe/lvnt1e.jpg'); /* 替换为您的背景图片路径 */
+            background-size: cover; /* 背景图覆盖整个屏幕 */
+            background-position: center; /* 背景图居中显示 */
+            background-repeat: no-repeat; /* 背景图不重复 */
+            background-attachment: fixed; /* 背景图固定，不随滚动条滚动 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-
-        /* 头部样式 */
-        header {
-            background-color: #f4f4f4;
+        .download-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
+            width: 180px;
         }
-
-        header h1 {
-            margin: 0;
-            color: #333;
+        .logo {
+            font-size: 48px;
+            color: #00bfa5;
+            margin-bottom: 20px;
         }
-
-        /* 导航栏样式 */
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #333;
-            padding: 15px;
+        .title {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 10px;
         }
-
-        nav a {
+        .subtitle {
+            font-size: 16px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+        .download-button {
+            background-color: #00bfa5;
             color: white;
-            text-decoration: none;
-            padding: 5px;
-            transition: background-color 0.3s ease; /* 过渡效果 */
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        /* 卡片通用样式 */
-       .card {
-            border: 1px solid #ccc;
+            border: none;
             border-radius: 5px;
-            margin: 20px;
-            padding: 15px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            background-color: white; /* 卡片背景色设为白色 */
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-
-        /* 卡片内标题样式 */
-       .card h2 {
-            color: #333;
-            margin-top: 0;
+        .download-button:hover {
+            background-color: #009688;
         }
-
-        /* 页脚样式 */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
+        .features {
+            margin-top: 20px;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .feature img {
+            width: 250px;
+            height: 120px;
+            margin-right: 10px;
         }
     </style>
 </head>
-
 <body>
-    <!-- 页面头部 -->
-    
-
-    <!-- 导航栏 -->
-   
-
-    <!-- 第一张卡片 -->
-    <section class="card">
-        <h2>内容一</h2>
-        <p>2024/9/25 下午15点38分</p>
-        <p><a href="https://abcd136.github.io/r/">点击查看</a></p>
-    </section>
-
-    <!-- 第二张卡片 -->
-    <section class="card">
-        <h2>内容二</h2>
-        <p>2024/9/26 晚上18点10分</p>
-        <p><a href="https://abcd136.github.io/r1/">点击查看</a>
-        </p>
-    </section>
-
-    <!-- 第三张卡片 -->
-    <section class="card">
-        <h2>内容三</h2>
-        <p>2024/9/27 早上9点50分</p>
-        <p><a href="https://abcd136.github.io/t1/">点击查看</a>
-        </p>
-    </section>
-
-    <!-- 第四张卡片 -->
-    <section class="card">
-        <h2>内容四</h2>
-        <p>2024/9/30 晚上19点20分</p>
-        <p><a href="https://abcd136.github.io/t2/">点击查看</a>
-        </p>
-    </section>
-
-    <!-- 第五张卡片 -->
-    <section class="card">
-        <h2>内容五</h2>
-        <p>2024/10/11 早上2点30分</p>
-        <p><a href="https://abcd136.github.io/t3/">点击查看</a>
-        </p>
-    </section>
-
-    <!-- 第六张卡片 -->
-    <section class="card">
-        <h2>内容六</h2>
-        <p>2024/10/21 晚上21点50分</p>
-        <p><a href="https://abcd136.github.io/t4/">点击查看</a>
-        </p>
-    </section>
-
-    <!-- 第七张卡片 -->
-    <section class="card">
-        <h2>内容七</h2>
-        <p>2024/10/27 晚上22点50分</p>
-        <p><a href="https://abcd136.github.io/t5/">点击查看</a>
-        </p>
-    </section>
-
-    <!-- 第八张卡片 -->
-    <section class="card">
-        <h2>内容八</h2>
-        <p>2024/11/7 晚上21点50分</p>
-        <p><a href="https://abcd136.github.io/t6/">点击查看</a>
-        </p>
-    </section>
-
-    <!-- 第九张卡片 -->
-    <section class="card">
-        <h2>内容九</h2>
-        <p>2024/11/22 早上9点40分</p>
-        <p><a href="https://abcd136.github.io/t7/">点击查看</a>
-        </p>
-    </section>
-
-    <!-- 页脚 -->
-    <footer>
-        &copy; 2024 版权所有，未经授权禁止转载
-    </footer>
+    <div class="download-container">
+        <div class="logo">PK</div>
+        <div class="title"></div>
+        <div class="subtitle"></div>
+        <button class="download-button">立即下载</button>
+  
+            
+            <!-- Add more features as needed -->
+        </div>
+    </div>
 </body>
-
 </html>
